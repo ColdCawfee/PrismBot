@@ -10,10 +10,11 @@ async def bot_started(event):
     print("Bot ready!")
 
 
-@bot.listen(hikari.GuildMessageCreateEvent)
-async def log(ctx):
-    with open("log.txt", 'w') as f:
-        f.write(str(ctx.content))
+#@bot.listen(hikari.GuildMessageCreateEvent)
+#async def log(ctx):
+    #with open("log.txt", 'w') as f:
+        #f.write(str(ctx.content))
+#^^^^ uncomment if you want message logging enabled
 
 
 @bot.command
